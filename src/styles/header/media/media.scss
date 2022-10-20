@@ -1,0 +1,14 @@
+#freestyle .freestyle-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__video {
+    background-color: $black;
+    color: white;
+    padding: 100px;
+    border-radius: 8px;
+    text-align: center;
+    grid-area: video;
+  }
+}
