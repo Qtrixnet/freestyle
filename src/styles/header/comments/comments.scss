@@ -3,6 +3,10 @@
 #freestyle #anycomment-app {
   margin-top: 40px;
 
+  @media screen and (max-width: 768px) {
+    padding: 0 24px;
+  }
+
   & .Avatar__Image-sc-1u1pk5n-0 {
     width: 60px;
     height: 60px;
@@ -11,6 +15,7 @@
   & .CommentForm__EditorWrapper-sc-1dhzlie-9 {
     border: 0;
     background-color: $background;
+    border-radius: 16px;
   }
 
   & .CommentForm__AvatarWrapper-sc-1dhzlie-2 {
@@ -38,5 +43,30 @@
     margin: 16px 0;
     font-size: 16px;
     line-height: 26px;
+  }
+
+  & .CommentItem__Li-sc-vru9ra-1 {
+    margin-bottom: 48px;
+  }
+
+  & .CommentList__Wrapper-sc-yycvka-0 {
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 40px;
+    background-color: $background;
+    border-radius: 16px 0 0 16px;
+
+    /* полоса прокрутки (скроллбар) */
+    &::-webkit-scrollbar {
+      width: 6px; /* ширина для вертикального скролла */
+      height: 6px; /* высота для горизонтального скролла */
+      background-color: $background;
+    }
+
+    /* ползунок скроллбара */
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+      border-radius: 9em;
+    }
   }
 }
