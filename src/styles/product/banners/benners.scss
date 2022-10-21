@@ -1,0 +1,12 @@
+#freestyle .freestyle-product {
+  &__banners {
+    @media screen and (max-width: 768px) {
+      margin: 74px 0 0;
+    }
+  }
+
+  &__banner {
+    display: block;
+    width: 100%;
+  }
+}
