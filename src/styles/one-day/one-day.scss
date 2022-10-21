@@ -1,3 +1,194 @@
 #freestyle .freestyle-winner {
-  color: green;
+  position: relative;
+  padding: 0 70px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 35px;
+  }
+}
+
+#freestyle .winner-header {
+  display: flex;
+  align-items: center;
+  padding-top: 78px;
+  padding-left: 70px;
+  margin-bottom: 64px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding-left: unset;
+    margin-bottom: 44px;
+  }
+
+  &__img {
+    margin-right: 90px;
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+      margin-right: unset;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    font-family: "Museo Extra Bold", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #ff681d;
+    max-width: 895px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 116%;
+      text-align: center;
+    }
+  }
+}
+
+#freestyle .winner-video {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 116px;
+  z-index: 5;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding-bottom: 43px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      gap: unset;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: 5;
+    margin-bottom: 54px;
+    margin-right: 70px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+      margin-right: unset;
+    }
+  }
+}
+
+#freestyle .video-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  max-width: 270px;
+
+  @media screen and (max-width: 768px) {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__title {
+    font-family: "Museo Extra Bold", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: #000;
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 100%;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 116%;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 49px;
+    background: #ff681d;
+    border-radius: 10px;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 11px 35px;
+    }
+  }
+}
+
+#freestyle .video-person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    border-radius: 9999px;
+    margin-bottom: 14px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 72px;
+    }
+  }
+
+  &__title {
+    font-family: "Museo Extra Bold", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 116%;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 8px;
+      line-height: 116%;
+    }
+  }
 }
