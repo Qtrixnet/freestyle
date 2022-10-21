@@ -197,4 +197,13 @@
       margin-bottom: 42px;
     }
   }
+
+  &__video {
+    max-width: 100%;
+    margin-bottom: 74px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 42px;
+    }
+  }
 }
