@@ -1,3 +1,37 @@
+/* stylelint-disable */
+
 #freestyle #anycomment-app {
-  opacity: 1;
+  margin-top: 40px;
+
+  & .cUddSd {
+    border: 0;
+    background-color: $background;
+  }
+
+  & .CMlVE {
+    width: 60px;
+    height: 60px;
+  }
+
+  & .bWqwri {
+    padding: 0 16px 0 0;
+  }
+
+  & .eqxasB {
+    padding: 0 16px 0 0;
+  }
+
+  & .ekFZNs {
+    color: $secondary;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  & .jHeVuD {
+    margin: 16px 0;
+  }
+
+  & .fqlMud {
+    gap: 24px;
+  }
 }
