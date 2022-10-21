@@ -106,7 +106,7 @@
   }
 
   &__variants-items {
-    display: flex;
+    display: none;
     gap: 8px;
 
     @media screen and (max-width: 768px) {
