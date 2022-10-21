@@ -1,16 +1,8 @@
 #freestyle .freestyle-header {
-  column-gap: 110px;
   margin: 46px 0;
 
   @media screen and (max-width: 768px) {
     margin: 96px 0;
-    grid-template-columns: 1fr;
-    gap: 0;
-    grid-template-areas:
-      "experiment"
-      "video"
-      "info"
-      "comments";
   }
 
   &__container {
@@ -24,5 +16,15 @@
     background-color: $background;
     padding: 40px 40px 0;
     border-radius: 16px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "experiment"
+        "video"
+        "info"
+        "comments";
+      padding: 24px 24px 0;
+    }
   }
 }
