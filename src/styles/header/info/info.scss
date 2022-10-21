@@ -3,11 +3,6 @@
   flex-direction: column;
   align-items: flex-start;
   grid-area: info;
-  margin-bottom: 46px;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 66px;
-  }
 
   &__text {
     margin: 0;
