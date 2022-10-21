@@ -3,35 +3,40 @@
 #freestyle #anycomment-app {
   margin-top: 40px;
 
-  & .cUddSd {
-    border: 0;
-    background-color: $background;
-  }
-
-  & .CMlVE {
+  & .Avatar__Image-sc-1u1pk5n-0 {
     width: 60px;
     height: 60px;
   }
 
-  & .bWqwri {
+  & .CommentForm__EditorWrapper-sc-1dhzlie-9 {
+    border: 0;
+    background-color: $background;
+  }
+
+  & .CommentForm__AvatarWrapper-sc-1dhzlie-2 {
     padding: 0 16px 0 0;
   }
 
-  & .eqxasB {
+  & .CommentItem__AvatarWrapper-sc-vru9ra-2 {
     padding: 0 16px 0 0;
   }
 
-  & .ekFZNs {
+  & .CommentItemHeader__AuthorName-sc-1p0oeq0-2 {
     color: $secondary;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 20px;
     margin-bottom: 8px;
   }
 
-  & .jHeVuD {
-    margin: 16px 0;
+  & .CommentItemHeader__Time-sc-1p0oeq0-4 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #8E979F;
   }
 
-  & .fqlMud {
-    gap: 24px;
+  & .CommentItemBody__BodyText-sc-fawbr8-0 {
+    margin: 16px 0;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
