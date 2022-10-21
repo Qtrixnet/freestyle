@@ -11,7 +11,7 @@
     display: block;
     width: 100%;
     height: 442px;
-    object-fit: cover;
+    object-fit: contain;
 
     @media screen and (max-width: 768px) {
       height: 250px;
@@ -31,12 +31,19 @@
   }
 
   &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 90px;
-    padding: 0 10px;
     border: 1px solid transparent;
     box-shadow: 0 0 4px rgba(0 0 0 / 15%);
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      border: 1px solid #ff681d;
+    }
 
     &_active {
       border: 1px solid #ff681d;
@@ -44,11 +51,10 @@
 
     @media screen and (max-width: 768px) {
       max-width: 50px;
-      padding: 0 6px;
     }
   }
 
   &__thumb-image {
-    width: 100%;
+    width: 80%;
   }
 }
