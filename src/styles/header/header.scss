@@ -1,10 +1,4 @@
 #freestyle .freestyle-header {
-  display: grid;
-  grid-template-areas:
-    "video experiment"
-    "comments info"
-    "comments form";
-  grid-template-columns: 1fr 550px;
   column-gap: 110px;
   margin: 46px 0;
 
@@ -16,7 +10,19 @@
       "experiment"
       "video"
       "info"
-      "form"
       "comments";
+  }
+
+  &__container {
+    display: grid;
+    grid-template-areas:
+      "video experiment"
+      "video info"
+      "comments comments";
+    grid-template-columns: 600px 1fr;
+    gap: 56px;
+    background-color: $background;
+    padding: 40px 40px 0;
+    border-radius: 16px;
   }
 }
