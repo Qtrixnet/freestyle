@@ -6,14 +6,12 @@
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  background-image: url("https://www.technodom.kz/under/samsung-freestyle/images/winner-block-video.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  width: 33.8vw;
+  height: 19vw;
 
   @media screen and (max-width: 768px) {
-    width: 320px;
-    height: 184px;
+    width: 80vw;
+    height: 45vw;
     margin: 0 auto;
   }
 }

@@ -1,6 +1,7 @@
 #freestyle .freestyle-winner {
   position: relative;
   padding: 0 70px;
+  display: none;
 
   @media screen and (max-width: 768px) {
     padding: 0 35px;
