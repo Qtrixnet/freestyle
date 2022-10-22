@@ -172,6 +172,7 @@
     font-size: 32px;
     line-height: 38px;
     font-weight: 700;
+    box-sizing: border-box;
 
     @media screen and (max-width: 768px) {
       font-size: 20px;
