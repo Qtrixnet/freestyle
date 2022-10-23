@@ -4,6 +4,10 @@
   padding: 0 0 30px;
 
   &__link {
+    display: block;
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
     background-color: transparent;
     color: #0288d1;
     border: 1px solid #0288d1;
@@ -12,6 +16,7 @@
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s ease-in-out;
+    box-sizing: border-box;
 
     &:hover {
       color: #fff;
