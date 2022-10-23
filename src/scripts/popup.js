@@ -6,7 +6,7 @@ const popupCloseButton = document.querySelector('.popup__close-button');
 
 const form = document.querySelector('.form');
 
-const emailInput = form.querySelector('.form__input');
+const emailInput = form.querySelector('.form__input_type_email');
 
 // eslint-disable-next-line no-shadow
 function showPopup(popup) {
