@@ -1,3 +1,25 @@
+@import "../variables";
+
+#freestyle .freestyle-about {
+  padding: 0 0 30px;
+
+  &__link {
+    background-color: transparent;
+    color: #0288d1;
+    border: 1px solid #0288d1;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: #0288d1;
+    }
+  }
+}
+
 #freestyle .about-header {
   margin-top: 64px;
   margin-bottom: 100px;
