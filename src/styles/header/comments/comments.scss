@@ -2,6 +2,7 @@
 
 #freestyle #anycomment-app {
   margin-top: 40px;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     padding: 0 24px;
@@ -68,5 +69,21 @@
       background-color: $primary;
       border-radius: 9em;
     }
+  }
+}
+
+#comments-loader {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid $primary;
+  border-top-color: transparent;
+  animation: rotate 1s linear infinite;
+  display: none;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }

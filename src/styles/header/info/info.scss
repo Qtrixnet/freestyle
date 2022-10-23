@@ -6,7 +6,7 @@
 
   &__text {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
 
     @media screen and (max-width: 768px) {
@@ -16,7 +16,7 @@
   }
 
   &__link {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     transition: opacity 0.2s ease;
     text-decoration: underline;
