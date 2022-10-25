@@ -1,0 +1,236 @@
+@import "../style-variables/colors";
+
+#freestyle .freestyle-about {
+  padding: 0 0 30px;
+
+  &__link {
+    display: block;
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #0288d1;
+    border: 1px solid #0288d1;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-sizing: border-box;
+
+    &:hover {
+      color: #fff;
+      background-color: #0288d1;
+    }
+  }
+}
+
+#freestyle .about-header {
+  margin-top: 64px;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+#freestyle .about-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 116%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 116%;
+  }
+}
+
+#freestyle .about-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+#freestyle .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__item--first {
+    order: 0;
+
+    @media screen and (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__item--second {
+    order: 1;
+
+    @media screen and (max-width: 768px) {
+      order: 0;
+    }
+  }
+
+  &__item--text {
+    padding: 50px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+}
+
+#freestyle .icon-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+
+  &__icon {
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+      max-width: 48px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+      line-height: 12px;
+      gap: 14px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
+
+#freestyle .about-background {
+  background-image: url("https://www.technodom.kz/under/samsung-freestyle/images/about-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 115px;
+  margin-bottom: 77px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 36px;
+    margin-bottom: 26px;
+  }
+
+  &__title {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 21px;
+      padding-bottom: 37px;
+    }
+  }
+}
+
+#freestyle .about-block {
+  &__title {
+    text-align: center;
+    margin-bottom: 38px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 116%;
+    text-align: center;
+    margin-bottom: 23px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 38px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__video {
+    max-width: 100%;
+    margin-bottom: 74px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 42px;
+    }
+  }
+}

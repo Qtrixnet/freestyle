@@ -1,0 +1,39 @@
+@import "../style-variables/colors";
+
+#freestyle {
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 0;
+    gap: 8px;
+
+    &__input {
+      display: block;
+      border: 1px solid $gray;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 12px !important;
+      border-radius: 6px;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    &__submit {
+      width: 100%;
+      margin: 16px 0 0;
+      padding: 12px;
+      background-color: $primary;
+      color: $white;
+      border: transparent;
+      font-size: 18px;
+      line-height: 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
