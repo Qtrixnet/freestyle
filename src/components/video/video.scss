@@ -1,0 +1,12 @@
+#freestyle .freestyle-video {
+  grid-area: video;
+  border-radius: 16px;
+  width: 616px;
+  height: 340px;
+
+  @media screen and (max-width: 768px) {
+    width: 91vw;
+    height: 51vw;
+    margin: 0 auto;
+  }
+}

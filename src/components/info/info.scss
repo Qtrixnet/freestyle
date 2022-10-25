@@ -1,0 +1,70 @@
+#freestyle .freestyle-info {
+  display: grid;
+  grid-template-columns: 616px 1fr;
+  column-gap: 40px;
+  row-gap: 24px;
+  grid-template-areas:
+    "video stories"
+    "video title";
+
+  @media screen and (max-width: 1440px) {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    grid-template-areas:
+    "stories"
+    "video"
+    "title";
+  }
+
+  &__stories-block {
+    grid-area: stories;
+
+    &-text {
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "Museo Light", sans-serif;
+      margin: 14px 0 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: "Museo Regular", sans-serif;
+        margin: 6px 0 0;
+        padding: 0 16px;
+      }
+    }
+  }
+
+  &__title-block {
+    grid-area: title;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 16px;
+    }
+
+    &-title {
+      font-size: 24px;
+      line-height: 30px;
+      font-family: "Museo Extra Bold", sans-serif;
+      margin-bottom: 8px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "Museo Light", sans-serif;
+      margin-bottom: 16px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: "Museo Regular", sans-serif;
+      }
+    }
+  }
+}

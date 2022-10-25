@@ -3,12 +3,19 @@
 #freestyle .freestyle-header {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 40px;
+  grid-template-columns: 616px 1fr;
+  column-gap: 40px;
+  margin: 40px 0 18px;
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    margin-bottom: 10px;
+    margin: 10px 0;
+  }
+
+  &__container {
+    @media screen and (max-width: 768px) {
+      padding: 0 16px;
+    }
   }
 
   &__link {
@@ -21,7 +28,7 @@
     display: block;
     margin: 0;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 768px) {
       width: 110px;
       height: 24px;
       margin: 16px auto;
@@ -34,7 +41,7 @@
     color: $primary;
     font-family: "Museo Bold", serif;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 768px) {
       font-size: 18px;
       line-height: 24px;
       text-align: center;
@@ -46,7 +53,7 @@
     line-height: 45px;
     font-family: "Museo Extra Bold", serif;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 768px) {
       font-size: 26px;
       line-height: 30px;
       text-align: center;
