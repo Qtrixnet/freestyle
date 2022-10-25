@@ -5,7 +5,8 @@
   row-gap: 24px;
   grid-template-areas:
     "video stories"
-    "video title";
+    "video title"
+    "video form";
 
   @media screen and (max-width: 1440px) {
     grid-template-columns: 1fr;
@@ -13,7 +14,8 @@
     grid-template-areas:
     "stories"
     "video"
-    "title";
+    "title"
+    "form";
   }
 
   &__stories-block {
@@ -58,7 +60,6 @@
       font-size: 16px;
       line-height: 20px;
       font-family: "Museo Light", sans-serif;
-      margin-bottom: 16px;
 
       @media screen and (max-width: 768px) {
         font-size: 14px;

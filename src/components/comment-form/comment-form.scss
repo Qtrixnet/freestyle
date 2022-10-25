@@ -1,0 +1,114 @@
+@import "../style-variables/colors";
+
+#freestyle .freestyle-form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 16px;
+  }
+
+  &__fieldset {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: self-start;
+    border: 0;
+
+    &_footer {
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__input {
+    background-color: $background;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 0;
+    outline: 2px solid transparent;
+    transition: outline 0.2s ease;
+    width: 100%;
+    font-family: "Museo Regular", sans-serif;
+
+    &::placeholder {
+      color: #8e979f;
+    }
+
+    &:focus {
+      outline: 2px solid $secondary;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 12px 16px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &_message {
+      resize: vertical;
+      width: 100%;
+      max-height: 300px;
+      min-height: 70px;
+      font-family: "Museo Regular", sans-serif;
+
+      @media screen and (max-width: 768px) {
+        min-height: 200px;
+      }
+    }
+  }
+
+  &__button {
+    padding: 12px 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0;
+    margin-top: 8px;
+    background-color: $secondary;
+    color: $white;
+    font-family: "Museo Regular", sans-serif;
+
+
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    &_disabled {
+      color: $white;
+      background-color: #D9DCDE;
+      pointer-events: none;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 24px;
+    transition: opacity 0.2s ease;
+    text-decoration: underline;
+    color: $primary;
+    font-family: "Museo Extra Bold", sans-serif;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 16px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

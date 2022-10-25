@@ -1,6 +1,7 @@
 import "./info.scss";
 import Stories from "../stories/stories";
 import Video from "../video/video";
+import CommentForm from "../comment-form/comment-form";
 
 const Info = () => {
   return (
@@ -16,6 +17,7 @@ const Info = () => {
         <p className="freestyle-info__title-block-text">Придумай свой вариант использования проектора и поделись идеей в комментариях. Автор самого интересного
           сценария станет обладателем The Freestyle от Samsung и героем нашего следующего видео.</p>
       </div>
+      <CommentForm />
     </div>
   );
 };
