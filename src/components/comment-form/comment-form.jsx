@@ -57,7 +57,7 @@ const CommentForm = ({handleScroll}) => {
         isCommentSended ? (
           <>
             <Message>Ваш комментарий принят и находится на проверке. Спасибо за участие в конкурсе!</Message>
-            <a href="#" className="freestyle-form__link" onClick={handleScroll}>Подробней об акции</a>
+            <a href="#" className="freestyle-form__link" onClick={handleScroll}>Подробно об акции</a>
           </>
         ) : (
           <>

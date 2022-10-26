@@ -19,7 +19,7 @@ const LiveShow = () => {
 
           <div className="freestyle-live__text-container">
             <p className="freestyle-live__text">
-              17 ноября 2022 года подводим итоги конкурса
+              15 ноября 2022 года подводим итоги конкурса
               The Freestyle Experiment! Герои видеопроекта, приглашенные звезды, подарки для зрителей
               и демонстрация возможностей The Freestyle
               в прямом эфире. Оставь свой e-mail и получи уведомление и ссылку на трансляцию за день

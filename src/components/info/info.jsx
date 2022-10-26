@@ -19,7 +19,7 @@ const Info = ({isCommentsShow, setIsCommentsShow}) => {
           предстоит придумать и воплотить в жизнь оригинальные сценарии использования проектора.</p>
       </div>
       <div className="freestyle-info__title-block">
-        <h2 className="freestyle-info__title-block-title">Учайствуй в конкурсе и стань нашим героем!</h2>
+        <h2 className="freestyle-info__title-block-title">Участвуй в конкурсе и стань нашим героем!</h2>
         <p className="freestyle-info__title-block-text">Придумай свой вариант использования проектора и поделись идеей в
           комментариях. Автор самого интересного
           сценария станет обладателем The Freestyle от Samsung и героем нашего следующего видео.</p>
@@ -33,7 +33,7 @@ const Info = ({isCommentsShow, setIsCommentsShow}) => {
           >
             Оставить комментарий
           </button>
-          <a href="#" className="freestyle-form__link" onClick={handleScroll}>Подробней об акции</a>
+          <a href="#" className="freestyle-form__link" onClick={handleScroll}>Подробно об акции</a>
         </div>
       )}
     </div>
