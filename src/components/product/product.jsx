@@ -13,7 +13,7 @@ const Product = () => {
     <section className="freestyle-product">
 
       <div className="freestyle-product__wrapper">
-        <h2 className="freestyle-product__title-mobile">Samsung The Freestyle</h2>
+        <h2 className="freestyle-product__title-mobile">Samsung <br/> The Freestyle</h2>
 
         <div className="freestyle-product__gallery">
 
@@ -52,7 +52,7 @@ const Product = () => {
 
         <div className="freestyle-product__info">
 
-          <h2 className="freestyle-product__title">Samsung The Freestyle</h2>
+          <h2 className="freestyle-product__title">Samsung <br/> The Freestyle</h2>
 
           <div className="freestyle-product__specifications">
 

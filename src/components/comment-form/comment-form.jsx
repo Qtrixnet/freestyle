@@ -83,7 +83,7 @@ const CommentForm = ({handleScroll}) => {
             </fieldset>
             <textarea
               className="freestyle-form__input freestyle-form__input_message"
-              placeholder="Написать сценарий:"
+              placeholder="Написать комментарий:"
               rows="4"
               required
               value={messageInputValue}

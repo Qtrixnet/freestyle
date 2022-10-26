@@ -31,7 +31,7 @@ const Info = ({isCommentsShow, setIsCommentsShow}) => {
             style={{justifySelf: 'flex-start', marginBottom: 8}}
             onClick={() => setIsCommentsShow(true)}
           >
-            Написать свой сценарий
+            Оставить комментарий
           </button>
           <a href="#" className="freestyle-form__link" onClick={handleScroll}>Подробней об акции</a>
         </div>
