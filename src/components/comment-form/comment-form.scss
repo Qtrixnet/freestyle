@@ -16,6 +16,7 @@
     justify-content: space-between;
     align-items: self-start;
     border: 0;
+    padding: 0;
 
     &_footer {
       @media screen and (max-width: 768px) {
@@ -60,6 +61,22 @@
       @media screen and (max-width: 768px) {
         min-height: 200px;
       }
+
+      &::-webkit-scrollbar {
+        width: 4px; /* ширина для вертикального скролла */
+        height: 4px; /* высота для горизонтального скролла */
+        background-color: #C0C5C9;
+      }
+
+      /* ползунок скроллбара */
+      &::-webkit-scrollbar-thumb {
+        background-color: $secondary;
+        border-radius: 9em;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: $primary;
+      }
     }
   }
 
@@ -73,7 +90,10 @@
     background-color: $secondary;
     color: $white;
     font-family: "Museo Regular", sans-serif;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 
     @media screen and (max-width: 768px) {
       margin-top: 0;
@@ -110,5 +130,21 @@
       width: 100%;
       text-align: center;
     }
+  }
+
+  &__loader {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: 1s rotate linear infinite;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }

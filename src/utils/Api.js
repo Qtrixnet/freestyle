@@ -27,13 +27,12 @@ class Api {
       .then((res) => this._requestResult(res))
   }
 
-  sendComment() {
+  sendComment({name, phone, message}) {
     const formData = new FormData();
 
-    formData.append('date', new Date(Date.now()).toString());
-    formData.append('phone', '+77006517000');
-    formData.append('name', 'Кирилл');
-    formData.append('comment', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+    formData.append('phone', phone);
+    formData.append('name', name);
+    formData.append('comment', message);
     formData.append('approve', 'no');
 
     return fetch(this._sendCommentsUrl, {
@@ -71,6 +70,7 @@ class Api {
         const comments = createPureArr(rows, labels);
 
         comments.shift();
+        console.log(comments)
 
         //* Возвращаем только одобренные комментарии
         return comments.filter(point => point?.approve.trim() === 'yes')

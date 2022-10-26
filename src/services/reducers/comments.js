@@ -4,24 +4,26 @@ const initialState = {
   comments: [],
   isCommentSending: false,
   isCommentsLoading: false,
+  isCommentSended: false,
 };
 
 export const commentsState = createSlice({
   name: 'comments',
   initialState,
   reducers: {
-    getCommentsRequest: (state) => {
+    getCommentsRequestAction: (state) => {
       state.isCommentsLoading = true;
     },
-    getCommentsRequestSuccess: (state, action) => {
+    getCommentsRequestSuccessAction: (state, action) => {
       state.isCommentsLoading = false;
       state.comments = action.payload;
     },
-    sendCommentRequest: (state) => {
+    sendCommentRequestAction: (state) => {
       state.isCommentSending = true;
     },
-    sendCommentRequestSuccess: (state) => {
+    sendCommentRequestSuccessAction: (state) => {
       state.isCommentSending = false;
+      state.isCommentSended = true;
     }
   }
 });
@@ -29,10 +31,10 @@ export const commentsState = createSlice({
 const {actions, reducer} = commentsState;
 
 export const {
-  getCommentsRequest,
-  getCommentsRequestSuccess,
-  sendCommentRequest,
-  sendCommentRequestSuccess
+  getCommentsRequestAction,
+  getCommentsRequestSuccessAction,
+  sendCommentRequestAction,
+  sendCommentRequestSuccessAction
 } = actions;
 
 export default reducer

@@ -4,6 +4,13 @@
   & .rees46-stories-story {
     min-width: 70px;
     margin: 0;
+
+    @media screen and (max-width: 768px) {
+      &:first-child {
+        margin-left: 16px;
+      }
+    }
+
   }
 
   & .rees46-stories-story-name {
@@ -17,4 +24,5 @@
   & .rees46-stories {
     max-width: 100vw;
   }
+
 }

@@ -6,12 +6,16 @@ import Product from "../product/product";
 import Header from "../header/header";
 import ReminderPopup from "../reminder-popup/reminder-popup";
 import Info from "../info/info";
+import Comments from "../comments/comments";
+import {useState} from "react";
 
 function App() {
+  const [isCommentsShow, setIsCommentsShow] = useState(false);
   return (
     <div className="app">
       <Header />
-      <Info />
+      <Info isCommentsShow={isCommentsShow} setIsCommentsShow={setIsCommentsShow}/>
+      {isCommentsShow && (<Comments />)}
       <Product />
       <LiveShow />
       <Winner />

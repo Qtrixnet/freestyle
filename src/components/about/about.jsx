@@ -100,7 +100,7 @@ const About = () => {
           Нет белой стены? The Freestyle позволяет оптимизировать проекцию
           с учетом цвета стены для улучшения условий просмотра.
         </p>
-        <img src="https://www.technodom.kz/under/samsung-freestyle/images/about-card-video.gif" alt=""
+        <img src="https://www.technodom.kz/under/samsung-freestyle/images/about-card-3.png" alt=""
              className="about-block__img"/>
 
           <h3 className="about-block__title about-title">
@@ -114,7 +114,7 @@ const About = () => {
             одну из ваших
             собственных фотографий - с The Freestyle возможности оформления комнаты безграничны.
           </p>
-          <img src="https://www.technodom.kz/under/samsung-freestyle/images/happy-birthday.gif" alt=""
+          <img src="https://www.technodom.kz/under/samsung-freestyle/images/about-card-4.png" alt=""
                className="about-block__img"/>
       </div>
 

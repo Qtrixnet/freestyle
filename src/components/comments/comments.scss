@@ -1,0 +1,44 @@
+@import "../style-variables/colors";
+
+#freestyle .freestyle-comments {
+  background-color: $background;
+  margin: 32px 0 40px;
+  border-radius: 12px;
+  padding: 24px;
+
+  @media screen and (max-width: 768px) {
+    margin: 24px 16px 32px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+    max-height: 370px;
+    overflow-y: scroll;
+    padding-right: 4px;
+
+    @media screen and (max-width: 768px) {
+      gap: 16px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px; /* ширина для вертикального скролла */
+      height: 4px; /* высота для горизонтального скролла */
+      background-color: #C0C5C9;
+    }
+
+    /* ползунок скроллбара */
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondary;
+      border-radius: 9em;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: $primary;
+    }
+  }
+}

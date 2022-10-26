@@ -1,0 +1,40 @@
+@import "../style-variables/colors";
+
+#freestyle .freestyle-empty-comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  padding: 24px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 12px 0;
+  }
+
+  &__icon {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url("https://www.technodom.kz/under/samsung-freestyle/images/icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media screen and (max-width: 768px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 30px;
+    color: $secondary;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
