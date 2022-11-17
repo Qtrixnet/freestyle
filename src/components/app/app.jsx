@@ -1,7 +1,7 @@
 import './app.scss';
 import About from "../about/about";
 import Winner from "../winner/winner";
-import LiveShow from "../live-show/live-show";
+import FreestyleWinners from "../winners/freestyle-winners";
 import Product from "../product/product";
 import Header from "../header/header";
 import ReminderPopup from "../reminder-popup/reminder-popup";
@@ -17,7 +17,7 @@ function App() {
       <Info isCommentsShow={isCommentsShow} setIsCommentsShow={setIsCommentsShow}/>
       {isCommentsShow && (<Comments />)}
       <Product />
-      <LiveShow />
+      <FreestyleWinners />
       <Winner />
       <About />
       <ReminderPopup />
